@@ -2,13 +2,17 @@ spring:
   application:
     name: apollo-portal
   profiles:
-    active: ${apollo_profile}
+    active: github  #激活application-github.properties属性文件
   resources:
     cache-period: 3600
+  datasource:
+    url: ${spring.datasource.url}
+    username: ${spring_datasource_username}
+    password: ${spring_datasource_password}
 
 server:
-  port: 8080
-  
+  port: 8070
+
 logging:
   file: /opt/logs/100003173/apollo-portal.log
 
@@ -20,6 +24,6 @@ management:
     enabled: false
   health:
     status:
-      order: DOWN, OUT_OF_SERVICE, UNKNOWN, UP 
+      order: DOWN, OUT_OF_SERVICE, UNKNOWN, UP
 
 

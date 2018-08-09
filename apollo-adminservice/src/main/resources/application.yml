@@ -5,10 +5,10 @@ spring:
     active: ${apollo_profile}
 
 ctrip:
-  appid: 100003172
+  appid: ${ctrip_appid}
   
 server:
-  port: 8090
+  port: ${server_port}
   
 logging:
   file: /opt/logs/100003172/apollo-adminservice.log

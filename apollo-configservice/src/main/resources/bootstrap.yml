@@ -1,7 +1,7 @@
 eureka:
   instance:
-    hostname: ${hostname:localhost}
     preferIpAddress: true
+    hostname: ${hostname:localhost}
   server:
     peerEurekaNodesUpdateIntervalMs: 60000
     enableSelfPreservation: false
