@@ -2,11 +2,11 @@ spring:
   application:
     name: apollo-portal
   profiles:
-    active: github  #激活application-github.properties属性文件
+    active: auth  #激活application-github.properties属性文件
   resources:
     cache-period: 3600
   datasource:
-    url: ${spring.datasource.url}
+    url: ${spring_datasource_url}
     username: ${spring_datasource_username}
     password: ${spring_datasource_password}
 
